@@ -12,12 +12,12 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'ssh root@bitwarden \'hostname\''
+                sh 'ssh jenkins@bitwarden \'hostname\''
             }
         }
         stage("Second step") {
             steps {
-                sh 'ssh root@bitwarden \'uptime\''
+                sh 'ssh jenkins@bitwarden \'uptime\''
             }
         }
     }
